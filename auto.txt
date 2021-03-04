@@ -1,0 +1,16 @@
+database = concessionario
+tabella = auto
+
+NOME COLONNA              TIPO             ATTRIBUTI
+--------------------      ----------       ------------------------
+auto_id (Primary Key)     MEDIUMINT        (NOTNULL)  (UNIQUE)  AUTO_INCREMENT
+marca                     VARCHAR          NOTNULL
+modello                   VARCHAR          NOTNULL
+prezzo                    MEDIUMINT        NOTNULL  DEFAULT da concordare
+targa                     VARCHAR(7)       NOTNULL  UNIQUE
+km                        DOUBLE(6,        NOTNULL
+immatricolazione          DATE             NOTNULL
+usato                     TINYINT(1)       NOTNULL
+n_proprietari             TINYINT          NOTNULL
+n_porte                   TINYINT          NULL
+alimentazione             VARCHAR          NOTNULL
